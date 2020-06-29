@@ -9,12 +9,8 @@
     @extend %checked;
 
     + .check-icon {
-      background-color: $accent-color;
-      border-color: $accent-color;
-
-      background-image: url("../images/icon\ check.svg");
-      background-size: contain;
-      background-origin: border-box;
+      @extend %checked;
+      background-image: url(../../images/icon\check.svg);
     }
   }
 
@@ -34,8 +30,6 @@
   border: 2px solid $title-text-color;
 
   border-radius: 2px;
-
-  @extend %checked;
 }
 
 .label-link {
