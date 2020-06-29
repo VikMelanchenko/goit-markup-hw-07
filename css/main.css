@@ -1088,7 +1088,7 @@ body {
 }
 
 .checkbox:checked + .check-icon {
-  background-image: url(../images/icon\check.svg);
+  background-image: url("../images/icon check.svg");
 }
 
 .checkbox-label {
