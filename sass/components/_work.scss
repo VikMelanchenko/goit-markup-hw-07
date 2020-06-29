@@ -1,0 +1,44 @@
+/* work list */
+
+.work {
+  &-list {
+    @extend %list;
+    @include centeredFlex();
+    flex-wrap: wrap;
+
+    .item {
+      position: relative;
+      width: 370px;
+    }
+
+    .item + .item {
+      margin-left: 30px;
+    }
+
+    .title {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 27px;
+      text-align: center;
+
+      width: 370px;
+
+      background-color: $color-gradient;
+      color: $primary-white-color;
+      font-weight: $font-bold;
+      line-height: 1.14;
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+  }
+
+  &-img {
+    display: block;
+  }
+}

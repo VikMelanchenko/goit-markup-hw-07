@@ -1,0 +1,38 @@
+/* customers */
+
+.customers {
+  &-list {
+    @extend %list;
+    @include centeredFlex();
+
+    .item + .item {
+      margin-left: 30px;
+    }
+
+    .link {
+      @extend %link;
+
+      width: 170px;
+      height: 90px;
+      color: $primery-link-color;
+
+      @include bordered();
+      @extend %border;
+
+      transition: border $time $timing-function;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+      }
+    }
+  }
+}
+
+.icon-logo {
+  display: block;
+  fill: currentColor;
+
+  transition: fill $time $timing-function;
+}

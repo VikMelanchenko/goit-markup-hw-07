@@ -1,0 +1,13 @@
+/* modal window */
+
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  height: 581px;
+
+  transform: translate(-50%, -50%);
+}

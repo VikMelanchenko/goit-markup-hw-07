@@ -1,0 +1,98 @@
+/* footer */
+.page-footer {
+  background: $footer-bg-color;
+  color: $secondary-text-footer;
+}
+
+.footer-main {
+  @include centeredFlex;
+
+  justify-content: space-between;
+
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+.address {
+  .text {
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-style: normal;
+    color: $primary-white-color;
+    line-height: 1.71;
+  }
+}
+
+.footer {
+  display: inline-block;
+
+  &-top {
+    margin-right: 69px;
+  }
+
+  &-middle {
+    margin-right: 94px;
+  }
+}
+
+.footer-nav {
+  @extend %list;
+  .contacts {
+    margin-bottom: 9px;
+    font-style: normal;
+    color: $secondary-text-footer;
+    line-height: 1.71;
+
+    text-decoration: none;
+  }
+}
+
+.connect-title {
+  @include centeredFlex();
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+  font-weight: $font-bold;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+
+.net-list {
+  @extend %list;
+  @include centeredFlex();
+  justify-content: center;
+
+  .link {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: $social-bg-color;
+    color: $primary-white-color;
+    border-radius: 50%;
+
+    transition: background-color $time $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

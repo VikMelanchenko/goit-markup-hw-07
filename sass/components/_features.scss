@@ -1,0 +1,48 @@
+/* features */
+
+// .section .hidetitle {
+//   display: none;
+// }
+
+.features {
+  &-list {
+    @extend %list;
+    @include centeredFlex();
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .item {
+      width: 270px;
+    }
+
+    .item + .item {
+      margin-left: 30px;
+    }
+
+    .text {
+      @extend %text;
+
+      width: 270px;
+    }
+
+    .title {
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      color: $title-text-color;
+      font-weight: $font-bold;
+      line-height: 1.14;
+    }
+  }
+
+  &-icon {
+    display: block;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: $secondary-bg-color;
+
+    @extend %border;
+  }
+}

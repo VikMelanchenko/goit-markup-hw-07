@@ -1,0 +1,33 @@
+/* hero */
+
+.hero {
+  text-align: center;
+  height: 600px;
+  min-width: 1600px;
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient($color-gradient, $color-gradient),
+    url("/images/Header\ img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-items: center;
+
+  // background-color: $backdrop-bg-color;
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 46px;
+
+    color: $primary-white-color;
+
+    font-weight: $font-black;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
